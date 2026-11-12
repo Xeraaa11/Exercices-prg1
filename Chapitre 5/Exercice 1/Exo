@@ -1,0 +1,43 @@
+1.
+
+// no 1
+array<int,3> a;
+for(int e : a) cout << e << ' ';
+
+
+Réponse: Comportement indéfini
+
+2.
+
+// no 2
+array<int,3> a{1,2};
+for(int e : a) cout << e << ' ';
+
+
+Réponse: 1 2 0
+
+3.
+
+// no 3
+array<int,3> a{1,2,3,4};
+for(int e : a) cout << e << ' ';
+
+
+Réponse: Erreur de compilation
+
+4.
+
+// no 4
+array<int,3> a{};
+for(int e : a) cout << e << ' ';
+
+Réponse: 0 0 0
+
+5.
+
+// no 5
+array<string,3> a;
+for(const string & e : a) cout << e.size() << ' ';
+
+
+Réponse: 0 0 0
