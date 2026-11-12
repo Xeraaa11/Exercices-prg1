@@ -1,0 +1,38 @@
+1.
+
+// no 1
+array<int, 5> a{1, 2, 3, 4, 5};
+cout << a.front() << ' ' << a.back();
+
+Réponse: 1 5
+
+2.
+
+// no 2
+array<int, 5> a{1, 2, 3, 4, 5};
+cout << a[1] << ' ' << a[3];
+
+Réponse: 2 4
+
+3.
+
+// no 3
+array<int, 5> a{1, 2, 3, 4, 5};
+cout << a[5];
+
+Réponse: Comportement indéfini
+
+4.
+
+// no 4
+array<int, 5> a{1, 2, 3, 4, 5};
+cout << a.at(1) << ' ' << a.at(3);
+
+Réponse: 2 4
+5.
+
+// no 5
+array<int, 5> a{1, 2, 3, 4, 5};
+cout << a.at(5);
+
+Réponse: erreur à l'execution: out of range
